@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+.main{
+    height: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    align-items: center;
+    padding: 0px 20px;
+    padding: 10px 100px;
+    background-color: rgb(161, 185, 193);
+}
+.imgD{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(252, 250, 250);
+    text-align: center;
+    border-radius:38px;
+}
+.imgD img{
+    height: 320px;
+    width: 100%;
+   
+    
+} 
+
+@media screen and (max-width:480px) {
+    .main {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .imgD {
+        width: 90%; /* adjust for smaller screens */
+    }
+
+    .imgD img {
+        width: 100%;
+        height: auto;
+    }
+}

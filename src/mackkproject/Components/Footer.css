@@ -1,0 +1,195 @@
+.foot {
+  background: #111;
+  color: white;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.subfoot h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.subfoot h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.subfoot input {
+    height: 50px;
+    width: 220px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.subfoot button{
+    height: 35px;
+    margin: 5px;
+}
+.subscribe {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.subscribe input {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  width: 300px;
+  max-width: 90%;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background: #d35400;
+}
+
+/* Footer bottom */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background: #222;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.Ff1 {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.Ff1 img {
+  margin-top: 15px;
+  max-width: 150px;
+}
+
+.Ff2 {
+  display: flex;
+  gap: 50px;
+  flex: 2 1 600px;
+  flex-wrap: wrap;
+}
+
+.about h2 {
+  margin: 8px 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.about h2:hover {
+  color: #f39c12;
+}
+
+/* ------------------------
+   Responsive Styles
+------------------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .foot {
+    padding: 40px 50px;
+  }
+
+  footer {
+    padding: 40px 50px;
+  }
+
+  .subfoot h1 {
+    font-size: 28px;
+  }
+
+  .subfoot h2 {
+    font-size: 16px;
+  }
+
+  .subscribe input {
+    width: 250px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .foot {
+    padding: 30px 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Ff1, .Ff2 {
+    flex: 1 1 100%;
+  }
+
+  .Ff2 {
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .subfoot h1 {
+    font-size: 22px;
+  }
+
+  .subfoot h2 {
+    font-size: 14px;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 90%;
+  }
+  .subfoot button{
+    width: 90px;
+    height: 35px;
+    margin-left: 10px;
+  }
+  .subfoot input{
+    height: 35px;
+    width: 300px;
+    margin: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: none;
+  }
+  #head{
+    margin-bottom: 0px;
+  }
+  .shoot img{
+    width: 75%;
+    height: 300px;
+  }
+  .brandrow{
+    padding: 10px 0px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,207 @@
+.page1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+  background: #839854;
+}
+
+.part1 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.part1 button{
+  width: 150px;
+}
+
+.part1 p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.part1 button {
+  padding: 12px 25px;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.part2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brandrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.brandrow img {
+  max-width: 100px;
+  height: auto;
+} 
+
+
+.page2 {
+  padding: 50px 80px;
+}
+
+.page2 h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shoot {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.shoot img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background: #d9a31a;
+  flex-wrap: wrap;
+}
+
+.section1 .portion2 {
+  flex: 1 1 400px;
+}
+
+.section1 img#women {
+  flex: 1 1 400px;
+  max-width: 100%;
+  height: auto;
+}
+.portion2 h1{
+  font-size: 60px;
+}
+
+.fav {
+  padding: 50px 80px;
+}
+
+.subfav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.dog1 button{
+  width: 150px;
+  height: 45PX;
+}
+
+.imgE {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.imgE img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ------------------------
+   Responsive Styles
+------------------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .page1, .section1, .page2, .fav {
+    padding: 40px 50px;
+  }
+
+  .part1 h1 {
+    font-size: 36px;
+  }
+
+  .part1 p {
+    font-size: 18px;
+  }
+
+  .shoot {
+    flex: 1 1 45%;
+  }
+
+  .imgE {
+    flex: 1 1 48%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .page1, .section1, .page2, .fav {
+    padding: 30px 20px;
+  }
+
+  .page1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .part1, .part2 {
+    margin-bottom: 30px;
+  }
+
+  .shoot {
+    flex: 1 1 100%;
+  }
+
+  .section1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .section1 img#women {
+    margin-bottom: 20px;
+  }
+
+  .imgE {
+    flex: 1 1 100%;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .part1 h1 {
+    font-size: 28px;
+  }
+
+  .part1 p {
+    font-size: 16px;
+  }
+
+  .shoot p, .shoot h4, .imgE h3, .imgE p {
+    font-size: 14px;
+  }
+
+  .part1 button, .section1 .portion2 button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .brandrow img {
+    max-width: 70px;
+  }
+}
