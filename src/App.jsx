@@ -21,10 +21,10 @@ import Category from "./mackkproject/Components/Category"
 function App() {
   return (
     <>
-      <BrowserRouter basename='/E-com'>
+      <BrowserRouter basename='/ecommerceweb'>
         <Header />
         <Routes >
-          <Route element={<Section />} path="/home" />
+          <Route element={<Section />} path="/" />
           <Route element={<Products />} path="/Products" />
           <Route element={<Mproducts />} path="/Mproducts" />
           <Route element={<Category />} path="/Category" />
