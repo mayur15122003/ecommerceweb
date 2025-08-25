@@ -6,7 +6,7 @@ import React from 'react'
 // import Layout from './pages/Layout';
 // import Contact from './pages/Contact';//
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 //import Registration from "./components/registration";//
 // import Register from "./components/Register";
 import Section from './mackkproject/Components/Section'
@@ -21,7 +21,7 @@ import Category from "./mackkproject/Components/Category"
 function App() {
   return (
     <>
-      <BrowserRouter basename='/ecommerceweb'>
+      <HashRouter basename='/ecommerceweb'>
         <Header />
         <Routes >
           <Route element={<Section />} path="/" />
@@ -44,7 +44,7 @@ function App() {
       </Route> */}
         </Routes>
         {<Footer />}
-      </BrowserRouter>
+      </HashRouter>
     </>
 
 
